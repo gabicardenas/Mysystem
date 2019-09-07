@@ -64,6 +64,7 @@ volatile unsigned long Delay = 0;
   * @return No return
 */
 void main(void) {
+	  uint8_t myNewFuction = 0;
       uint8_t bValFrecuency;
       uint8_t sRangeDetector = 0;
       UART_vfnDriverInit();
