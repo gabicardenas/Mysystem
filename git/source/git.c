@@ -1,70 +1,105 @@
-/*
- * Copyright 2016-2019 NXP
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without modification,
- * are permitted provided that the following conditions are met:
- *
- * o Redistributions of source code must retain the above copyright notice, this list
- *   of conditions and the following disclaimer.
- *
- * o Redistributions in binary form must reproduce the above copyright notice, this
- *   list of conditions and the following disclaimer in the documentation and/or
- *   other materials provided with the distribution.
- *
- * o Neither the name of NXP Semiconductor, Inc. nor the names of its
- *   contributors may be used to endorse or promote products derived from this
- *   software without specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
- * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
- * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
- * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
- * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
- * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
- * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
- * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
- * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
- * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- */
- 
-/**
- * @file    git.c
- * @brief   Application entry point.
- */
-#include <stdio.h>
-#include "board.h"
-#include "peripherals.h"
-#include "pin_mux.h"
-#include "clock_config.h"
 #include "MKL27Z644.h"
-#include "fsl_debug_console.h"
-/* TODO: insert other include files here. */
 
-/* TODO: insert other definitions and declarations here. */
+
+/**
+  * @fn vfnInRange
+  * @brief Alarm activated if the received value is in the specified range
+  * @param No receive a parameters
+  * @return No return
+*/
+
+void vfnInRange(void);
+/**
+  * @fn vfnOutRange
+  * @brief Alarm activated if the received value is in the specified range
+  * @param No receive a parameters
+  * @return No return
+*/
+
+void vfnOutRange(void);
+/**
+  * @fn vfnClose
+  * @brief Alarm activated if the received value is in the specified range
+  * @param No receive a parameters
+  * @return No return
+*/
+
+void vfnClose(void);
+/**
+  * @fn vfnLowFrequency
+  * @brief Alarm activated if the received value is in the specified range
+  * @param No receive a parameters
+  * @return No return
+*/
+
+void vfnLowFrequency (void);
+/**
+  * @fn vfnHighFrequency
+  * @brief Alarm activated if the received value is in the specified range
+  * @param No receive a parameters
+  * @return No return
+*/
+
+void vfnHighFrequency (void);
+/**
+  * @fn vfnStableFrequency
+  * @brief Alarm activated if the received value is in the specified range
+  * @param No receive a parameters
+  * @return No return
+*/
+void vfnStableFrequency(void);
 
 /*
- * @brief   Application entry point.
- */
-int main(void) {
+  * @fn Delay
+  * @brief Variable used for have a death time, with the purpose to see the change of each alarms
+*/
+volatile unsigned long Delay = 0;
 
-  	/* Init board hardware. */
-    BOARD_InitBootPins();
-    BOARD_InitBootClocks();
-    BOARD_InitBootPeripherals();
-  	/* Init FSL debug console. */
-    BOARD_InitDebugConsole();
+/**
+  * @fn main
+  * @brief Main function, where you use all the drivers created in the module
+    to meet the objective, in this case, activate alarms so that the mother has a notion of
+    what happens with her baby
+  * @param No receive a parameters
+  * @return No return
+*/
+void main(void) {
+      uint8_t bValFrecuency;
+      uint8_t sRangeDetector = 0;
+      UART_vfnDriverInit();
 
-    PRINTF("Hello World\n");
+    while(1)
+    {
+        UART1_bfnRead (&bValFrecuency);
 
-    /* Force the counter to be placed into memory. */
-    volatile static int i = 0 ;
-    /* Enter an infinite loop, just incrementing a counter. */
-    while(1) {
-        i++ ;
-        /* 'Dummy' NOP to allow source level single stepping of
-            tight while() loop */
-        __asm volatile ("nop");
+            if(bValFrecuency <= 62)
+            {
+                 vfnLowFrequency();
+            }
+            if((bValFrecuency > 62) && (bValFrecuency < 66))
+            {
+                 vfnStableFrequency();
+            }
+            if(bValFrecuency > 66)
+            {
+            	 vfnHighFrequency();
+            }
+
+       UART_bfnRead(&sRangeDetector);
+
+            if(sRangeDetector <= 50)
+            {
+                  vfnClose();
+            }
+            if((sRangeDetector > 50) && (sRangeDetector <= 54))
+            {
+                  vfnInRange();
+            }
+            if(sRangeDetector > 54)
+            {
+                  vfnOutRange();
+            }
+
+
     }
-    return 0 ;
 }
