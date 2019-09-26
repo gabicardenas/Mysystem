@@ -1,4 +1,0 @@
-GPIO_Driver.c:8:6:GPIO_vfnDriverInit	24	static
-GPIO_Driver.c:86:6:GPIO_vfnWritePin	16	static
-GPIO_Driver.c:98:9:GPIO_vfnReadPin	24	static
-GPIO_Driver.c:116:6:GPIO_vfnToggle	16	static

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="Control_ptrSegmentDivisor" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="Control_ptrSegmentDivisor"/>
+			<item value="AuxArry"/>
+			<item value="bActivityState"/>
+			<item value="ControlManager_bfnActivity"/>
+			<item value="Get_bfnThousands"/>
+			<item value="TimerCounter"/>
+			<item value="PrintNumbreNine"/>
+			<item value="PrintNumbreEight"/>
+		</list>
+		<list key="replacehistory">
+			<item value="PrintNumberNine"/>
+			<item value="PrintNumberEight"/>
+			<item value="PrintNumberSeven"/>
+			<item value="PrintNumberSix"/>
+			<item value="PrintNumberFive"/>
+			<item value="PrintNumberFour"/>
+			<item value="PrintNumberThree"/>
+			<item value="PrintNumberTwo"/>
+			<item value="PrintNumberOne"/>
+			<item value="PrintNumberZero"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="284" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="391" key="DIALOG_HEIGHT"/>
+		<item value="549" key="DIALOG_X_ORIGIN"/>
+		<item value="112" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

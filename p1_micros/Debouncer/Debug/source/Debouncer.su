@@ -1,0 +1,4 @@
+Debouncer.c:38:6:GPIO_vfnDriverInit	24	static
+Debouncer.c:116:6:GPIO_vfnWritePin	16	static
+Debouncer.c:128:9:GPIO_bfnReadPin	32	static
+Debouncer.c:153:5:main	16	static

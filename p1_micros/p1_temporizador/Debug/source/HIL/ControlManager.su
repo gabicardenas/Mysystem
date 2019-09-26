@@ -1,0 +1,2 @@
+ControlManager.c:43:6:ControlManager_vfnDriverInit	8	static
+ControlManager.c:57:9:ControlManager_bfnActivity	32	static

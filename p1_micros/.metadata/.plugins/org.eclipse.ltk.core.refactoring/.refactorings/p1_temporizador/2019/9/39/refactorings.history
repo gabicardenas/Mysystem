@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;p1_temporizador/source/SL/Utils.c&apos; to &apos;SegmentDivisor.c&apos;" description="Rename resource &apos;Utils.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="source/SL/Utils.c" name="SegmentDivisor.c" stamp="1569203901641" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;p1_temporizador/source/SL/Utils.h&apos; to &apos;SegmentDivisor.h&apos;" description="Rename resource &apos;Utils.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="source/SL/Utils.h" name="SegmentDivisor.h" stamp="1569203907941" updateReferences="true"/>
+</session>

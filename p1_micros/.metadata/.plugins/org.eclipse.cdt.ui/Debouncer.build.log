@@ -1,0 +1,6 @@
+19:45:14 **** Incremental Build of configuration Debug for project Debouncer ****
+make -r -j2 all 
+make: Nothing to be done for 'all'.
+
+19:45:14 Build Finished. 0 errors, 0 warnings. (took 681ms)
+

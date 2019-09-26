@@ -1,0 +1,235 @@
+17:18:00 **** Build of configuration Debug for project prueba ****
+make -r -j2 all 
+Building file: ../utilities/fsl_str.c
+Invoking: MCU C Compiler
+Building file: ../utilities/fsl_debug_console.c
+arm-none-eabi-gcc -DCPU_MKL27Z64VLH4 -DCPU_MKL27Z64VLH4_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../component/serial_manager -I../utilities -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"utilities/fsl_str.d" -MT"utilities/fsl_str.o" -MT"utilities/fsl_str.d" -o "utilities/fsl_str.o" "../utilities/fsl_str.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL27Z64VLH4 -DCPU_MKL27Z64VLH4_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../component/serial_manager -I../utilities -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"utilities/fsl_debug_console.d" -MT"utilities/fsl_debug_console.o" -MT"utilities/fsl_debug_console.d" -o "utilities/fsl_debug_console.o" "../utilities/fsl_debug_console.c"
+Finished building: ../utilities/fsl_str.c
+Finished building: ../utilities/fsl_debug_console.c
+ 
+ 
+Building file: ../startup/startup_mkl27z644.c
+Building file: ../source/SL/Debouncer.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL27Z64VLH4 -DCPU_MKL27Z64VLH4_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../component/serial_manager -I../utilities -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"startup/startup_mkl27z644.d" -MT"startup/startup_mkl27z644.o" -MT"startup/startup_mkl27z644.d" -o "startup/startup_mkl27z644.o" "../startup/startup_mkl27z644.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL27Z64VLH4 -DCPU_MKL27Z64VLH4_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I"C:\Users\Gabi\Documents\p1_micros\prueba\source\APP" -I"C:\Users\Gabi\Documents\p1_micros\prueba\source\HAL" -I"C:\Users\Gabi\Documents\p1_micros\prueba\source\HIL" -I"C:\Users\Gabi\Documents\p1_micros\prueba\source\SL" -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../component/serial_manager -I../utilities -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/SL/Debouncer.d" -MT"source/SL/Debouncer.o" -MT"source/SL/Debouncer.d" -o "source/SL/Debouncer.o" "../source/SL/Debouncer.c"
+Finished building: ../source/SL/Debouncer.c
+ 
+Finished building: ../startup/startup_mkl27z644.c
+Building file: ../source/SL/SegmentDivisor.c
+ 
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL27Z64VLH4 -DCPU_MKL27Z64VLH4_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I"C:\Users\Gabi\Documents\p1_micros\prueba\source\APP" -I"C:\Users\Gabi\Documents\p1_micros\prueba\source\HAL" -I"C:\Users\Gabi\Documents\p1_micros\prueba\source\HIL" -I"C:\Users\Gabi\Documents\p1_micros\prueba\source\SL" -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../component/serial_manager -I../utilities -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/SL/SegmentDivisor.d" -MT"source/SL/SegmentDivisor.o" -MT"source/SL/SegmentDivisor.d" -o "source/SL/SegmentDivisor.o" "../source/SL/SegmentDivisor.c"
+Building file: ../source/HIL/ControlManager.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL27Z64VLH4 -DCPU_MKL27Z64VLH4_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I"C:\Users\Gabi\Documents\p1_micros\prueba\source\APP" -I"C:\Users\Gabi\Documents\p1_micros\prueba\source\HAL" -I"C:\Users\Gabi\Documents\p1_micros\prueba\source\HIL" -I"C:\Users\Gabi\Documents\p1_micros\prueba\source\SL" -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../component/serial_manager -I../utilities -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/HIL/ControlManager.d" -MT"source/HIL/ControlManager.o" -MT"source/HIL/ControlManager.d" -o "source/HIL/ControlManager.o" "../source/HIL/ControlManager.c"
+Finished building: ../source/SL/SegmentDivisor.c
+ 
+Finished building: ../source/HIL/ControlManager.c
+Building file: ../source/HIL/DISPLAY_Driver.c
+ 
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL27Z64VLH4 -DCPU_MKL27Z64VLH4_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I"C:\Users\Gabi\Documents\p1_micros\prueba\source\APP" -I"C:\Users\Gabi\Documents\p1_micros\prueba\source\HAL" -I"C:\Users\Gabi\Documents\p1_micros\prueba\source\HIL" -I"C:\Users\Gabi\Documents\p1_micros\prueba\source\SL" -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../component/serial_manager -I../utilities -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/HIL/DISPLAY_Driver.d" -MT"source/HIL/DISPLAY_Driver.o" -MT"source/HIL/DISPLAY_Driver.d" -o "source/HIL/DISPLAY_Driver.o" "../source/HIL/DISPLAY_Driver.c"
+Building file: ../source/HAL/GPIO_Driver.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL27Z64VLH4 -DCPU_MKL27Z64VLH4_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I"C:\Users\Gabi\Documents\p1_micros\prueba\source\APP" -I"C:\Users\Gabi\Documents\p1_micros\prueba\source\HAL" -I"C:\Users\Gabi\Documents\p1_micros\prueba\source\HIL" -I"C:\Users\Gabi\Documents\p1_micros\prueba\source\SL" -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../component/serial_manager -I../utilities -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/HAL/GPIO_Driver.d" -MT"source/HAL/GPIO_Driver.o" -MT"source/HAL/GPIO_Driver.d" -o "source/HAL/GPIO_Driver.o" "../source/HAL/GPIO_Driver.c"
+Finished building: ../source/HIL/DISPLAY_Driver.c
+ 
+Finished building: ../source/HAL/GPIO_Driver.c
+Building file: ../source/APP/p1_temporizador.c
+ 
+Invoking: MCU C Compiler
+Building file: ../source/mtb.c
+arm-none-eabi-gcc -DCPU_MKL27Z64VLH4 -DCPU_MKL27Z64VLH4_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I"C:\Users\Gabi\Documents\p1_micros\prueba\source\APP" -I"C:\Users\Gabi\Documents\p1_micros\prueba\source\HAL" -I"C:\Users\Gabi\Documents\p1_micros\prueba\source\HIL" -I"C:\Users\Gabi\Documents\p1_micros\prueba\source\SL" -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../component/serial_manager -I../utilities -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/APP/p1_temporizador.d" -MT"source/APP/p1_temporizador.o" -MT"source/APP/p1_temporizador.d" -o "source/APP/p1_temporizador.o" "../source/APP/p1_temporizador.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL27Z64VLH4 -DCPU_MKL27Z64VLH4_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I"C:\Users\Gabi\Documents\p1_micros\prueba\source\APP" -I"C:\Users\Gabi\Documents\p1_micros\prueba\source\HAL" -I"C:\Users\Gabi\Documents\p1_micros\prueba\source\HIL" -I"C:\Users\Gabi\Documents\p1_micros\prueba\source\SL" -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../component/serial_manager -I../utilities -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/mtb.d" -MT"source/mtb.o" -MT"source/mtb.d" -o "source/mtb.o" "../source/mtb.c"
+Finished building: ../source/APP/p1_temporizador.c
+Finished building: ../source/mtb.c
+ 
+ 
+Building file: ../drivers/fsl_clock.c
+Building file: ../source/semihost_hardfault.c
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL27Z64VLH4 -DCPU_MKL27Z64VLH4_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I"C:\Users\Gabi\Documents\p1_micros\prueba\source\APP" -I"C:\Users\Gabi\Documents\p1_micros\prueba\source\HAL" -I"C:\Users\Gabi\Documents\p1_micros\prueba\source\HIL" -I"C:\Users\Gabi\Documents\p1_micros\prueba\source\SL" -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../component/serial_manager -I../utilities -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/semihost_hardfault.d" -MT"source/semihost_hardfault.o" -MT"source/semihost_hardfault.d" -o "source/semihost_hardfault.o" "../source/semihost_hardfault.c"
+arm-none-eabi-gcc -DCPU_MKL27Z64VLH4 -DCPU_MKL27Z64VLH4_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../component/serial_manager -I../utilities -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_clock.d" -MT"drivers/fsl_clock.o" -MT"drivers/fsl_clock.d" -o "drivers/fsl_clock.o" "../drivers/fsl_clock.c"
+Finished building: ../source/semihost_hardfault.c
+ 
+Building file: ../drivers/fsl_common.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL27Z64VLH4 -DCPU_MKL27Z64VLH4_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../component/serial_manager -I../utilities -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_common.d" -MT"drivers/fsl_common.o" -MT"drivers/fsl_common.d" -o "drivers/fsl_common.o" "../drivers/fsl_common.c"
+Finished building: ../drivers/fsl_clock.c
+ 
+Building file: ../drivers/fsl_gpio.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL27Z64VLH4 -DCPU_MKL27Z64VLH4_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../component/serial_manager -I../utilities -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_gpio.d" -MT"drivers/fsl_gpio.o" -MT"drivers/fsl_gpio.d" -o "drivers/fsl_gpio.o" "../drivers/fsl_gpio.c"
+Finished building: ../drivers/fsl_common.c
+ 
+Building file: ../drivers/fsl_i2c.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL27Z64VLH4 -DCPU_MKL27Z64VLH4_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../component/serial_manager -I../utilities -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_i2c.d" -MT"drivers/fsl_i2c.o" -MT"drivers/fsl_i2c.d" -o "drivers/fsl_i2c.o" "../drivers/fsl_i2c.c"
+Finished building: ../drivers/fsl_gpio.c
+ 
+Building file: ../drivers/fsl_lpuart.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL27Z64VLH4 -DCPU_MKL27Z64VLH4_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../component/serial_manager -I../utilities -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_lpuart.d" -MT"drivers/fsl_lpuart.o" -MT"drivers/fsl_lpuart.d" -o "drivers/fsl_lpuart.o" "../drivers/fsl_lpuart.c"
+Finished building: ../drivers/fsl_i2c.c
+ 
+Finished building: ../drivers/fsl_lpuart.c
+Building file: ../drivers/fsl_smc.c
+ 
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL27Z64VLH4 -DCPU_MKL27Z64VLH4_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../component/serial_manager -I../utilities -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_smc.d" -MT"drivers/fsl_smc.o" -MT"drivers/fsl_smc.d" -o "drivers/fsl_smc.o" "../drivers/fsl_smc.c"
+Building file: ../drivers/fsl_uart.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL27Z64VLH4 -DCPU_MKL27Z64VLH4_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../component/serial_manager -I../utilities -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"drivers/fsl_uart.d" -MT"drivers/fsl_uart.o" -MT"drivers/fsl_uart.d" -o "drivers/fsl_uart.o" "../drivers/fsl_uart.c"
+Finished building: ../drivers/fsl_smc.c
+ 
+Building file: ../device/system_MKL27Z644.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL27Z64VLH4 -DCPU_MKL27Z64VLH4_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../component/serial_manager -I../utilities -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"device/system_MKL27Z644.d" -MT"device/system_MKL27Z644.o" -MT"device/system_MKL27Z644.d" -o "device/system_MKL27Z644.o" "../device/system_MKL27Z644.c"
+Finished building: ../drivers/fsl_uart.c
+ 
+Building file: ../component/uart/lpuart_adapter.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL27Z64VLH4 -DCPU_MKL27Z64VLH4_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../component/serial_manager -I../utilities -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"component/uart/lpuart_adapter.d" -MT"component/uart/lpuart_adapter.o" -MT"component/uart/lpuart_adapter.d" -o "component/uart/lpuart_adapter.o" "../component/uart/lpuart_adapter.c"
+Finished building: ../device/system_MKL27Z644.c
+ 
+Building file: ../component/serial_manager/serial_manager.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL27Z64VLH4 -DCPU_MKL27Z64VLH4_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../component/serial_manager -I../utilities -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"component/serial_manager/serial_manager.d" -MT"component/serial_manager/serial_manager.o" -MT"component/serial_manager/serial_manager.d" -o "component/serial_manager/serial_manager.o" "../component/serial_manager/serial_manager.c"
+Finished building: ../component/uart/lpuart_adapter.c
+ 
+Building file: ../component/serial_manager/serial_port_uart.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL27Z64VLH4 -DCPU_MKL27Z64VLH4_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../component/serial_manager -I../utilities -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"component/serial_manager/serial_port_uart.d" -MT"component/serial_manager/serial_port_uart.o" -MT"component/serial_manager/serial_port_uart.d" -o "component/serial_manager/serial_port_uart.o" "../component/serial_manager/serial_port_uart.c"
+Finished building: ../component/serial_manager/serial_manager.c
+ 
+Building file: ../board/board.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL27Z64VLH4 -DCPU_MKL27Z64VLH4_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../component/serial_manager -I../utilities -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"board/board.d" -MT"board/board.o" -MT"board/board.d" -o "board/board.o" "../board/board.c"
+Finished building: ../component/serial_manager/serial_port_uart.c
+ 
+Building file: ../board/clock_config.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL27Z64VLH4 -DCPU_MKL27Z64VLH4_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../component/serial_manager -I../utilities -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"board/clock_config.d" -MT"board/clock_config.o" -MT"board/clock_config.d" -o "board/clock_config.o" "../board/clock_config.c"
+Finished building: ../board/board.c
+ 
+Building file: ../board/peripherals.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL27Z64VLH4 -DCPU_MKL27Z64VLH4_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../component/serial_manager -I../utilities -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"board/peripherals.d" -MT"board/peripherals.o" -MT"board/peripherals.d" -o "board/peripherals.o" "../board/peripherals.c"
+Finished building: ../board/clock_config.c
+Finished building: ../board/peripherals.c
+ 
+ 
+Building file: ../board/pin_mux.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DCPU_MKL27Z64VLH4 -DCPU_MKL27Z64VLH4_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../drivers -I../device -I../CMSIS -I../component/uart -I../component/serial_manager -I../utilities -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"board/pin_mux.d" -MT"board/pin_mux.o" -MT"board/pin_mux.d" -o "board/pin_mux.o" "../board/pin_mux.c"
+Finished building: ../board/pin_mux.c
+ 
+Building target: prueba.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="prueba.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T prueba_Debug.ld -o "prueba.axf"  ./utilities/fsl_debug_console.o ./utilities/fsl_str.o  ./startup/startup_mkl27z644.o  ./source/SL/Debouncer.o ./source/SL/SegmentDivisor.o  ./source/HIL/ControlManager.o ./source/HIL/DISPLAY_Driver.o  ./source/HAL/GPIO_Driver.o  ./source/APP/p1_temporizador.o  ./source/mtb.o ./source/semihost_hardfault.o  ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_gpio.o ./drivers/fsl_i2c.o ./drivers/fsl_lpuart.o ./drivers/fsl_smc.o ./drivers/fsl_uart.o  ./device/system_MKL27Z644.o  ./component/uart/lpuart_adapter.o  ./component/serial_manager/serial_manager.o ./component/serial_manager/serial_port_uart.o  ./board/board.o ./board/clock_config.o ./board/peripherals.o ./board/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        7048 B        64 KB     10.75%
+            SRAM:        2488 B        16 KB     15.19%
+         USB_RAM:          0 GB        512 B      0.00%
+Finished building target: prueba.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "prueba.axf"; # arm-none-eabi-objcopy -v -O binary "prueba.axf" "prueba.bin" ; # checksum -p MKL27Z64xxx4 -d "prueba.bin";
+   text	   data	    bss	    dec	    hex	filename
+   6992	     56	   2432	   9480	   2508	prueba.axf
+ 
+17:19:42 **** Incremental Build of configuration Debug for project prueba ****
+make -r -j2 all 
+make: Nothing to be done for 'all'.
+17:28:13 **** Build of configuration Debug for project p1_temporizador ****
+make -r -j2 all 
+Building target: p1_temporizador.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="p1_temporizador.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T p1_temporizador_Debug.ld -o "p1_temporizador.axf"  ./startup/startup_mkl27z644.o  ./source/SL/Debouncer.o ./source/SL/SegmentDivisor.o  ./source/HIL/ControlManager.o ./source/HIL/DISPLAY_Driver.o  ./source/HAL/GPIO_Driver.o  ./source/APP/p1_temporizador.o  ./device/system_MKL27Z644.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        7044 B        64 KB     10.75%
+            SRAM:        2332 B        16 KB     14.23%
+         USB_RAM:          0 GB        512 B      0.00%
+Finished building target: p1_temporizador.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "p1_temporizador.axf"; # arm-none-eabi-objcopy -v -O binary "p1_temporizador.axf" "p1_temporizador.bin" ; # checksum -p MKL27Z64xxx4 -d "p1_temporizador.bin";
+   text	   data	    bss	    dec	    hex	filename
+   6988	     56	   2276	   9320	   2468	p1_temporizador.axf
+ 
+22:24:55 **** Build of configuration Debug for project p1_temporizador ****
+make -r -j2 all 
+Building target: p1_temporizador.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="p1_temporizador.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T p1_temporizador_Debug.ld -o "p1_temporizador.axf"  ./startup/startup_mkl27z644.o  ./source/SL/Debouncer.o ./source/SL/SegmentDivisor.o  ./source/HIL/ControlManager.o ./source/HIL/DISPLAY_Driver.o  ./source/HAL/GPIO_Driver.o  ./source/APP/p1_temporizador.o  ./device/system_MKL27Z644.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        7044 B        64 KB     10.75%
+            SRAM:        2332 B        16 KB     14.23%
+         USB_RAM:          0 GB        512 B      0.00%
+Finished building target: p1_temporizador.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "p1_temporizador.axf"; # arm-none-eabi-objcopy -v -O binary "p1_temporizador.axf" "p1_temporizador.bin" ; # checksum -p MKL27Z64xxx4 -d "p1_temporizador.bin";
+   text	   data	    bss	    dec	    hex	filename
+   6988	     56	   2276	   9320	   2468	p1_temporizador.axf
+ 
+22:31:16 **** Incremental Build of configuration Debug for project p1_temporizador ****
+make -r -j2 all 
+make: Nothing to be done for 'all'.
+22:49:52 **** Incremental Build of configuration Debug for project p1_temporizador ****
+make -r -j2 all 
+Building file: ../source/HIL/DISPLAY_Driver.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DCPU_MKL27Z64VLH4 -DCPU_MKL27Z64VLH4_cm0plus -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"C:\Users\Gabi\Documents\p1_micros\p1_temporizador\source\APP" -I"C:\Users\Gabi\Documents\p1_micros\p1_temporizador\source\HAL" -I"C:\Users\Gabi\Documents\p1_micros\p1_temporizador\source\HIL" -I"C:\Users\Gabi\Documents\p1_micros\p1_temporizador\source\SL" -I../source -I../ -I../device -I../CMSIS -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/HIL/DISPLAY_Driver.d" -MT"source/HIL/DISPLAY_Driver.o" -MT"source/HIL/DISPLAY_Driver.d" -o "source/HIL/DISPLAY_Driver.o" "../source/HIL/DISPLAY_Driver.c"
+Finished building: ../source/HIL/DISPLAY_Driver.c
+ 
+Building target: p1_temporizador.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="p1_temporizador.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T p1_temporizador_Debug.ld -o "p1_temporizador.axf"  ./startup/startup_mkl27z644.o  ./source/SL/Debouncer.o ./source/SL/SegmentDivisor.o  ./source/HIL/ControlManager.o ./source/HIL/DISPLAY_Driver.o  ./source/HAL/GPIO_Driver.o  ./source/APP/p1_temporizador.o  ./device/system_MKL27Z644.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        7044 B        64 KB     10.75%
+            SRAM:        2332 B        16 KB     14.23%
+         USB_RAM:          0 GB        512 B      0.00%
+Finished building target: p1_temporizador.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "p1_temporizador.axf"; # arm-none-eabi-objcopy -v -O binary "p1_temporizador.axf" "p1_temporizador.bin" ; # checksum -p MKL27Z64xxx4 -d "p1_temporizador.bin";
+   text	   data	    bss	    dec	    hex	filename
+   6988	     56	   2276	   9320	   2468	p1_temporizador.axf
+ 
+17:18:19 **** Incremental Build of configuration Debug for project p1_temporizador ****
+make -r -j2 all 
+Building target: p1_temporizador.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="p1_temporizador.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T p1_temporizador_Debug.ld -o "p1_temporizador.axf"  ./startup/startup_mkl27z644.o  ./source/SL/Debouncer.o ./source/SL/SegmentDivisor.o  ./source/HIL/ControlManager.o ./source/HIL/DISPLAY_Driver.o  ./source/HAL/GPIO_Driver.o  ./source/APP/p1_temporizador.o  ./device/system_MKL27Z644.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        7044 B        64 KB     10.75%
+            SRAM:        2332 B        16 KB     14.23%
+         USB_RAM:          0 GB        512 B      0.00%
+Finished building target: p1_temporizador.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "p1_temporizador.axf"; # arm-none-eabi-objcopy -v -O binary "p1_temporizador.axf" "p1_temporizador.bin" ; # checksum -p MKL27Z64xxx4 -d "p1_temporizador.bin";
+   text	   data	    bss	    dec	    hex	filename
+   6988	     56	   2276	   9320	   2468	p1_temporizador.axf
+ 
+17:23:01 **** Incremental Build of configuration Debug for project p1_temporizador ****
+make -r -j2 all 
+make: Nothing to be done for 'all'.
+18:07:02 **** Incremental Build of configuration Debug for project p1_temporizador ****
+make -r -j2 all 
+make: Nothing to be done for 'all'.
+18:54:23 **** Incremental Build of configuration Debug for project p1_temporizador ****
+make -r -j2 all 
+make: Nothing to be done for 'all'.

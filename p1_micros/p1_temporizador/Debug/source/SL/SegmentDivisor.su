@@ -1,0 +1,4 @@
+SegmentDivisor.c:8:9:Get_bfnThousands	24	static
+SegmentDivisor.c:15:9:Get_bfnHundreds	24	static
+SegmentDivisor.c:24:9:Get_bfnTens	24	static
+SegmentDivisor.c:34:9:Get_bfnUnits	16	static

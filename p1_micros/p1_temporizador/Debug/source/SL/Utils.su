@@ -1,0 +1,4 @@
+Utils.c:9:9:Get_bfnThousands	24	static
+Utils.c:16:9:Get_bfnHundreds	24	static
+Utils.c:25:9:Get_bfnTens	24	static
+Utils.c:35:9:Get_bfnUnits	16	static

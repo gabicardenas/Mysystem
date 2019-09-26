@@ -1,0 +1,14 @@
+DISPLAY_Driver.c:95:6:DISPLAY_vfnDriverInit	8	static
+DISPLAY_Driver.c:113:6:DISPLAY_vfnNumberPrinter	16	static
+DISPLAY_Driver.c:118:6:PrintNumberZero	8	static
+DISPLAY_Driver.c:130:6:PrintNumberOne	8	static
+DISPLAY_Driver.c:142:6:PrintNumberTwo	8	static
+DISPLAY_Driver.c:154:6:PrintNumberThree	8	static
+DISPLAY_Driver.c:166:6:PrintNumberFour	8	static
+DISPLAY_Driver.c:178:6:PrintNumberFive	8	static
+DISPLAY_Driver.c:190:6:PrintNumberSix	8	static
+DISPLAY_Driver.c:202:6:PrintNumberSeven	8	static
+DISPLAY_Driver.c:214:6:PrintNumberEight	8	static
+DISPLAY_Driver.c:225:6:PrintNumberNine	8	static
+DISPLAY_Driver.c:237:6:DISPLAY_vfnActivitySel	16	static
+DISPLAY_Driver.c:267:6:Display_vfnPrintNormal	32	static
